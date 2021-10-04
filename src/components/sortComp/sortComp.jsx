@@ -1,6 +1,5 @@
+import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
 import {
   RadioGroup,
   Radio,

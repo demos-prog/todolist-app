@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import * as data from "./data.json";
 import "./null_styles.css";
-import "./App.css";
+import * as data from "./data.json";
 import { Button } from "@material-ui/core";
 import AddNewTask from "./components/addNewTaskModal/addNewTaskModal";
 import List from "./components/list/List";
 import SortComp from "./components/sortComp/sortComp";
 import HashTagList from "./components/hashTagList/hashTagList";
+import "./App.css";
 
 class TodoItem {
   constructor(id, todo, hashtag, done) {

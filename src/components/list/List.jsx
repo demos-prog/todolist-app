@@ -1,7 +1,7 @@
-import "./List.css";
-import deleteIcon from "./img/delete_black_24dp.svg";
-import { Checkbox } from "@material-ui/core";
 import { useState } from "react";
+import { Checkbox } from "@material-ui/core";
+import deleteIcon from "./img/delete_black_24dp.svg";
+import "./List.css";
 
 export default function List({
   arrOfTags,
