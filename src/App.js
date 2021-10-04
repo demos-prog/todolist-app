@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import * as data from "./data.json";
 import "./null_styles.css";
 import "./App.css";
 import { Button } from "@material-ui/core";
@@ -6,13 +7,6 @@ import AddNewTask from "./components/addNewTaskModal/addNewTaskModal";
 import List from "./components/list/List";
 import SortComp from "./components/sortComp/sortComp";
 import HashTagList from "./components/hashTagList/hashTagList";
-
-let arr = [
-  { id: 1, todo: "eat", hashtag: "#food", done: false },
-  { id: 2, todo: "sleep", hashtag: "#action", done: true },
-  { id: 3, todo: "drink", hashtag: "#food", done: false },
-  { id: 4, todo: "fight", hashtag: "", done: true },
-];
 
 class TodoItem {
   constructor(id, todo, hashtag, done) {
@@ -24,7 +18,7 @@ class TodoItem {
 }
 
 function App() {
-  const [todoList, setTodoList] = useState(arr);
+  const [todoList, setTodoList] = useState(data.default);
   const [sortedList, setSortedList] = useState(todoList);
   const [sortParam, setSortParam] = useState("ALL");
   const [arrOfTags, setArrOfTags] = useState([]);

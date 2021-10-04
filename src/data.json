@@ -1,0 +1,6 @@
+[
+  { "id": 1, "todo": "eat", "hashtag": "#food", "done": false },
+  { "id": 2, "todo": "sleep", "hashtag": "#action", "done": true },
+  { "id": 3, "todo": "drink", "hashtag": "#food", "done": false },
+  { "id": 4, "todo": "fight", "hashtag": "", "done": true }
+]
