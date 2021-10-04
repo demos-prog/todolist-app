@@ -1,0 +1,62 @@
+.item {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+  margin-bottom: 10px;
+  width: 700px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  &__todo {
+    cursor: pointer;
+  }
+
+  &__done {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+#deleteIcon {
+  cursor: pointer;
+}
+
+.doneItem {
+  background-color: rgb(13, 145, 145);
+  color: #fff;
+}
+
+#editModalBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#editModalWrapper {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: min-content;
+  & form input {
+    margin-top: 20px;
+    padding: 5px 10px;
+  }
+  & form p {
+    color: black;
+    text-align: center;
+  }
+}

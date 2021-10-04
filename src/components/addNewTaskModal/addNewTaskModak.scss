@@ -1,0 +1,26 @@
+.modalBackground{
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: min-content;
+  & form input {
+    margin-top: 20px;
+    padding: 5px 10px;
+  }
+  & form p {
+    text-align: center;
+  }
+}
