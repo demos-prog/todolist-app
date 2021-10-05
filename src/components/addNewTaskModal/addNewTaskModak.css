@@ -32,6 +32,8 @@
 }
 
 .modal form p {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: default;
   text-align: center;
 }
 /*# sourceMappingURL=addNewTaskModak.css.map */
