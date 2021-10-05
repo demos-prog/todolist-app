@@ -84,7 +84,13 @@ export default function List({
           src={deleteIcon}
           onClick={() => handleDelete(id)}
         />
-        <div onClick={() => handleEdit(id)} className="item__todo">
+        <div
+          onClick={() => {
+            handleEdit(id);
+            setEditedTask(todo + " " + hashtag);
+          }}
+          className="item__todo"
+        >
           <b>{todo}</b> <u>{hashtag}</u>
         </div>
         <div className="item__done">
@@ -104,7 +110,6 @@ export default function List({
                   type="text"
                   value={editedTask}
                   onChange={(e) => setEditedTask(e.target.value)}
-                  placeholder={todo + " " + hashtag}
                 ></input>
               </form>
             </div>
