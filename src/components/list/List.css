@@ -86,4 +86,13 @@
     width: 90vw;
   }
 }
+
+@media (max-width: 450px) {
+  #editModalWrapper {
+    width: 90vw;
+  }
+  #editModalWrapper form input {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=List.css.map */

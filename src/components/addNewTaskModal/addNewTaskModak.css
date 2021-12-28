@@ -36,4 +36,13 @@
   cursor: default;
   text-align: center;
 }
+
+@media (max-width: 450px) {
+  .modal {
+    width: 90vw;
+  }
+  .modal form input {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=addNewTaskModak.css.map */

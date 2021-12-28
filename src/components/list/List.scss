@@ -62,9 +62,17 @@
   }
 }
 
+@media (max-width: 750px) {
+  .item {
+    width: 90vw;
+  }
+}
 
-@media (max-width:750px) {
- .item{
-   width: 90vw;
- } 
+@media (max-width: 450px) {
+  #editModalWrapper {
+    width: 90vw;
+    & form input {
+      width: 100%;
+    }
+  }
 }

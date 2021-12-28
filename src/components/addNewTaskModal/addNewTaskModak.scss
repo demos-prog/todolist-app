@@ -1,4 +1,4 @@
-.modalBackground{
+.modalBackground {
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.modal{
+.modal {
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 10px;
@@ -24,5 +24,14 @@
     color: rgba(0, 0, 0, 0.6);
     cursor: default;
     text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal {
+    width: 90vw;
+    & form input {
+      width: 100%;
+    }
   }
 }
