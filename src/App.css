@@ -20,3 +20,7 @@
 button{
   cursor:pointer;
 }
+
+@media (max-width: 750px) {
+  #app{padding-top: 10px;}
+}

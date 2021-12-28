@@ -80,4 +80,10 @@
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
 }
+
+@media (max-width: 750px) {
+  .item {
+    width: 90vw;
+  }
+}
 /*# sourceMappingURL=List.css.map */
