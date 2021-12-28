@@ -44,7 +44,11 @@ export default function AddNewTask({
   }
 
   return (
-    <div className="modalBackground" onClick={() => setShowModal(false)}>
+    <div
+      style={{ top: `${window.pageYOffset}px` }}
+      className="modalBackground"
+      onClick={() => setShowModal(false)}
+    >
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <form onSubmit={(e) => handleAddNewTask(e, newTask)}>
           <p>

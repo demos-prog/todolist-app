@@ -110,7 +110,11 @@ export default function List({
           ></Checkbox>
         </div>
         {editingTaskId === id && (
-          <div id="editModalBackground" onClick={() => setEditingTaskId(null)}>
+          <div
+            style={{ top: `${window.pageYOffset}px` }}
+            id="editModalBackground"
+            onClick={() => setEditingTaskId(null)}
+          >
             <div id="editModalWrapper" onClick={(e) => e.stopPropagation()}>
               <form onSubmit={(e) => handleAddNewTask(e, editedTask, id)}>
                 <p>Editing a task</p>
