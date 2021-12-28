@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Checkbox } from "@material-ui/core";
 import deleteIcon from "./img/delete_black_24dp.svg";
 import "./List.css";
@@ -26,6 +26,14 @@ export default function List({
       })
     );
   }
+
+  useEffect(() => {
+    if (editingTaskId !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [editingTaskId]);
 
   function handleAddNewTask(e, value, id) {
     e.preventDefault();

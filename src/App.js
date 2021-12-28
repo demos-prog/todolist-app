@@ -25,6 +25,14 @@ function App() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [showModal]);
+
+  useEffect(() => {
     switch (sortParam) {
       case "ALL":
         setSortedList(todoList);
